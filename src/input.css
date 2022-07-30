@@ -1,0 +1,19 @@
+@import url('https://fonts.google.com/specimen/Rubik');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+.show{
+    display: grid;
+    background-color: hsl(229, 31%, 21%);
+    height: 100vh;
+
+    opacity: .9;
+    top: 0;
+    z-index: 30;
+   
+}
