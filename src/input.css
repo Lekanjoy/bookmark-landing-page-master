@@ -6,14 +6,27 @@
 
 *{
     -webkit-tap-highlight-color: transparent;
+   
+   
 }
 .show{
     display: grid;
     background-color: hsl(229, 31%, 21%);
     height: 100vh;
-
     opacity: .9;
     top: 0;
-    z-index: 30;
+    z-index: 35;
+   
+}
+.illustration::before{
+    content: '';
+    width: 400px;
+    height: 200px;
+    background-color: hsl(231, 69%, 60%);
+    position: absolute;
+    z-index: -1;
+    border-bottom-left-radius: 40%;
+    top: 20%;
+ 
    
 }
