@@ -15,7 +15,7 @@
 
 
   <!-- Logo and Navigation Here -->
-  <header class=" w-full text-white flex justify-between fixed cursor-pointer mb-6
+  <header class=" w-full text-white flex justify-between fixed z-20  bg-GrayishBlue cursor-pointer mb-6 pb-2
    md:h-auto md:bg-transparent md:relative md:mb-0">
 
     <div class="logo pl-6 pt-4 z-40 filter  md:pt-8 md:filter-none md:z-auto md:pl-20">
@@ -27,16 +27,16 @@
 
       <ul class=" w-full text-center text-lg pt-12 md:flex md:gap-x-5 md:pt-0">
         <li
-          class="mb-8  border-t-GrayishBlue/50 border border-x-0 border-b-0 pt-3 w-full md:border-none md:text-base md:pb-0 md:px-0">
+          class="mb-8  border-t-GrayishBlue/50 border border-x-0 border-b-0 pt-3 w-full md:border-none md:text-base md:pb-0 md:px-0  lg:hover:text-SoftRed">
           FEATURES</li>
         <li
-          class="mb-8 border-t-GrayishBlue/50 border border-x-0 border-b-0 pt-3 w-full md:border-none md:text-base md:pb-0 md:px-0">
+          class="mb-8 border-t-GrayishBlue/50 border border-x-0 border-b-0 pt-3 w-full md:border-none md:text-base md:pb-0 md:px-0 lg:hover:text-SoftRed">
           PRICING</li>
         <li
-          class="mb-8 border-y-GrayishBlue/50 border border-x-0  pt-3 pb-8 w-full md:border-none md:text-base md:pb-0 md:px-0">
+          class="mb-8 border-y-GrayishBlue/50 border border-x-0  pt-3 pb-8 w-full md:border-none md:text-base md:pb-0 md:px-0 lg:hover:text-SoftRed">
           CONTACT</li>
         <li class="mb-8 border-white border-2 py-3 rounded-md  w-full 
-        md:text-base md:border-none md:px-8 md:py-1 md:mt-2 md:text-white md:bg-SoftRed">LOGIN</li>
+        md:text-base md:px-8 md:py-1 md:mt-2 md:text-white md:bg-SoftRed lg:hover:bg-white lg:hover:text-SoftRed  lg:hover:border-SoftRed">LOGIN</li>
       </ul>
 
       <div class="icon flex gap-x-6 md:hidden">
@@ -46,7 +46,7 @@
 
     </nav>
 
-    <div class="menu pr-6 pt-4 z-40 filter md:hidden md:filter-none md:z-auto">
+    <div class="menu pr-6 pt-4 z-50 filter md:hidden md:filter-none md:z-auto">
       <img id="menu" src="/images/icon-hamburger.svg" alt="icon-hamburger">
     </div>
 
@@ -56,7 +56,7 @@
   <main class=" pt-20  md:pt-12">
 
     <!-- Hero Section Here -->
-    <section class="hero w-full flex flex-col justify-center items-center mb-20 md:flex-row-reverse px-6 md:px-20 md:gap-x-3">
+    <section class="hero  w-full flex flex-col justify-center items-center mb-20 md:flex-row-reverse px-6 md:px-20 md:gap-x-3">
 
       <div class="illustration w-4/5 mb-12 md:w-auto md:mb-0">
         <img class="w-full" src="/images/illustration-hero.svg" alt="illustration-hero">
@@ -69,8 +69,8 @@
           Open a new browser tab and see your sites load instantly. Try it for free.</p>
 
         <div class="cta flex justify-center items-center gap-x-4 md:justify-start">
-          <button class=" bg-SoftBlue px-6 py-3 rounded-md text-white font-semibold">Get it on Chrome</button>
-          <button class=" bg-white px-6 py-3 rounded-md text-VeryDarkBlue font-semibold drop-shadow-xl z-[-1]">Get
+          <button class=" bg-SoftBlue px-2 text-base py-3 rounded-md text-white font-medium md:px-6 md:font-semibold lg:hover:text-SoftBlue lg:hover:drop-shadow-xl lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-white ">Get it on Chrome</button>
+          <button class=" bg-white px-2 text-base py-3 rounded-md text-VeryDarkBlue font-medium drop-shadow-xl z-[-1] md:px-6 md:font-semibold  lg:z-10 lg:hover:border-2 lg:hover:border-GrayishBlue">Get
             it on Firefox</button>
         </div>
 
@@ -87,24 +87,23 @@
         <p class="text-GrayishBlue mb-8 ">Our aim is to make it quick and easy for you to access your favourite
           websites.
           Your bookmarks sync between your devices so you can access them on the go.</p>
-
       </div>
 
-      <div
-        class="tabs cursor-pointer flex flex-col text-GrayishBlue font-semibold md:gap-x-12 md:border md:border-b-GrayishBlue/50 md:border-x-0 md:border-t-0 md:flex-row md:justify-between ">
-        <h2 class="mb-4 border border-y-GrayishBlue/40 border-x-0 py-6 md:border-t-0 md:mb-0  md:border-y-0 ">Simple
+      <div class="tabs cursor-pointer flex flex-col text-GrayishBlue font-semibold md:gap-x-12 md:border md:border-b-GrayishBlue/50 md:border-x-0 md:border-t-0 md:flex-row md:justify-between ">
+        <h2 id="simple" class="mb-4 border relative border-y-GrayishBlue border-x-0 py-6 
+         md:border-t-0 md:text-base md:mb-0  md:border-y-0  lg:hover:text-SoftRed">Simple
           Bookmarking</h2>
-        <h2 class="mb-4 border border-b-GrayishBlue/40 border-x-0 border-t-0 pb-6 md:py-6 md:mb-0  md:border-y-0">Speedy
+        <h2 id="speedy" class="mb-4 border relative border-b-GrayishBlue border-x-0 border-t-0 pb-6 md:text-base md:py-6 md:mb-0  md:border-y-0 lg:hover:text-SoftRed">Speedy
           Searching</h2>
-        <h2 class="mb-4 border border-b-GrayishBlue/40 border-x-0 border-t-0 pb-6 md:py-6 md:mb-0  md:border-y-0">Easy
+        <h2 id="easy" class="mb-4 border relative border-b-GrayishBlue border-x-0 border-t-0 pb-6 md:text-base md:py-6 md:mb-0  md:border-y-0 lg:hover:text-SoftRed">Easy
           Sharing</h2>
       </div>
 
       <!-- Tabs Here -->
-      <div class="revealTabs mt-16">
+      <div id="revealTabs" class="revealTabs mt-16">
 
-        <div class="tab1 md:flex gap-x-10 md:items-center">
-          <!-- Tab 1 Here -->
+                  <!-- Tab 1 Here -->
+        <div id="tab1" class="tab1 flex flex-col  md:flex-row gap-x-10 md:items-center">
 
           <div class="illust mb-12 md:mb-0 md:w-1/2">
             <img class="md:w-4/5" src="/images/illustration-features-tab-1.svg" alt="illustration">
@@ -115,14 +114,14 @@
             <p class="text-GrayishBlue md:text-base md:font-medium lg:text-lg">Organize your bookmarks however you like.
               Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
-            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4  md:text-base lg:text-lg">More Info</button>
+            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block  md:text-base lg:text-lg">More Info</button>
           </div>
 
         </div>
 
-        <div class="tab2 hidden  md:flex gap-x-10 md:items-center">
           <!-- Tab 2 Here -->
-
+        <div id="tab2" class="tab2 hidden flex flex-col md:flex-row   gap-x-10 md:items-center">
+  
           <div class="illust mb-12  md:mb-0 md:w-1/2">
             <img class="md:w-4/5" src="/images/illustration-features-tab-2.svg" alt="illustration">
           </div>
@@ -132,12 +131,12 @@
             <p class="text-GrayishBlue  md:text-base md:font-medium lg:text-lg">Our powerful search feature will help
               you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.</p>
-            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4 md:text-base lg:text-lg">More Info</button>
+            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block md:text-base lg:text-lg">More Info</button>
           </div>
         </div>
 
-        <div class="tab3 hidden  md:flex gap-x-10 md:items-center">
           <!-- Tab 3 Here -->
+        <div id="tab3" class="tab3 hidden flex flex-col md:flex-row gap-x-10 md:items-center">
 
           <div class="illust mb-12  md:mb-0 md:w-1/2">
             <img class="md:w-4/5" src="/images/illustration-features-tab-3.svg" alt="illustration">
@@ -148,7 +147,7 @@
             <p class="text-GrayishBlue  md:text-base md:font-medium lg:text-lg">Easily share your bookmarks and
               collections with others. Create a shareable
               link that you can send at the click of a button.</p>
-            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4 md:text-base lg:text-lg">More Info</button>
+            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block md:text-base lg:text-lg">More Info</button>
 
           </div>
         </div>
@@ -185,7 +184,7 @@
 
           <div class="cta">
             <img class="w-full mb-8" src="/images/bg-dots.svg" alt="bg-dots">
-            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg">Add & Install
+            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">Add & Install
               Extension</button>
           </div>
 
@@ -205,7 +204,7 @@
 
           <div class="cta">
             <img class="w-full mb-8" src="/images/bg-dots.svg" alt="bg-dots">
-            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg">Add & Install
+            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">Add & Install
               Extension</button>
           </div>
 
@@ -225,7 +224,7 @@
 
           <div class="cta">
             <img class="w-full mb-8" src="/images/bg-dots.svg" alt="bg-dots">
-            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg">Add & Install
+            <button class="bg-SoftBlue text-white w-full px-3 py-4 font-medium rounded-lg lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">Add & Install
               Extension</button>
           </div>
 
@@ -237,7 +236,7 @@
     </section>
 
     <!-- FAQ Section Here -->
-    <section class="FAQ w-full px-6 md:px-20  md:flex md:flex-col md:items-center">
+    <section class="FAQ w-full px-6 cursor-pointer md:px-20  md:flex md:flex-col md:items-center">
 
       <div class="details text-center mb-10  md:w-3/5">
         <h4 class="mb-4 text-VeryDarkBlue text-2xl font-bold">Frequently Asked <br class="md:hidden"> Questions</h4>
@@ -246,14 +245,14 @@
           answered please feel free to email us.</p>
       </div>
 
-      <div class="faq1 w-full mb-6  border-2 border-GrayishBlue/20 border-x-0 border-t-0 pb-6  md:w-3/5">
+      <div class="faq1 w-full mb-6  border border-GrayishBlue/50 border-x-0 border-t-0 pb-3   md:w-3/5">
 
-        <div class="header flex justify-between ">
-          <h4 class="text-VeryDarkBlue text-xl font-semibold mb-4">What is Bookmark?</h4>
-          <img class="w-4 h-4 cursor-pointer" src="/images/icon-arrow.svg" alt="icon-expand">
+        <div class="header flex justify-between  ">
+          <h4 class="text-VeryDarkBlue text-lg font-medium  lg:hover:text-SoftRed mb-4">What is Bookmark?</h4>
+          <img id="arrow" class="arrow  w-4 h-4 cursor-pointer" src="/images/icon-arrow.svg" alt="icon-expand">
         </div>
 
-        <div class="answer">
+        <div class="answer h-0 hidden">
           <p class="text-GrayishBlue text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
         </div>
@@ -261,14 +260,14 @@
       </div>
 
 
-      <div class="faq2 w-full mb-6 border-2 border-GrayishBlue/20 border-x-0 border-t-0 pb-6  md:w-3/5">
+      <div class="faq2 w-full mb-6 border border-GrayishBlue/50 border-x-0 border-t-0 pb-6  md:w-3/5">
 
-        <div class="header flex justify-between">
-          <h4 class="text-VeryDarkBlue text-xl font-semibold mb-4">How can I request a new browser?</h4>
-          <img class="w-4 h-4" src="/images/icon-arrow.svg" alt="icon-expand">
+        <div class="header flex justify-between ">
+          <h4 class="text-VeryDarkBlue text-lg font-medium lg:hover:text-SoftRed  mb-4">How can I request a new browser?</h4>
+          <img class="arrow w-4 h-4" src="/images/icon-arrow.svg" alt="icon-expand">
         </div>
 
-        <div class="answer">
+        <div class="answer  h-0 hidden">
           <p class="text-GrayishBlue text-base">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
           Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
           ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
@@ -278,14 +277,14 @@
       </div>
 
 
-      <div class="faq3 w-full mb-6 border-2 border-GrayishBlue/20 border-x-0 border-t-0 pb-6  md:w-3/5">
+      <div class="faq3 w-full mb-6 border border-GrayishBlue/50 border-x-0 border-t-0 pb-6  md:w-3/5">
 
-        <div class="header flex justify-between">
-          <h4 class="text-VeryDarkBlue text-xl font-semibold mb-4">Is there a mobile app? </h4>
-          <img class="w-4 h-4" src="/images/icon-arrow.svg" alt="icon-expand">
+        <div class="header flex justify-between ">
+          <h4 class="text-VeryDarkBlue text-lg font-medium lg:hover:text-SoftRed  mb-4">Is there a mobile app? </h4>
+          <img class="arrow w-4 h-4 " src="/images/icon-arrow.svg" alt="icon-expand">
         </div>
 
-        <div class="answer">
+        <div class="answer  h-0 hidden">
           <p class="text-GrayishBlue text-base">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
           urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
           sollicitudin ex et ultricies bibendum..</p>
@@ -294,14 +293,14 @@
       </div>
 
 
-      <div class="faq4 w-full mb-6 border-2 border-GrayishBlue/20 border-x-0 border-t-0 pb-6  md:w-3/5">
+      <div class="faq4 w-full mb-6 border border-GrayishBlue/50 border-x-0 border-t-0 pb-6  md:w-3/5">
 
-        <div class="header flex justify-between">
-          <h4 class="text-VeryDarkBlue text-xl font-semibold mb-4">What about other Chromium browsers?</h4>
-          <img class="w-4 h-4" src="/images/icon-arrow.svg" alt="icon-expand">
+        <div class="header flex justify-between ">
+          <h4 class="text-VeryDarkBlue text-lg font-medium lg:hover:text-SoftRed  mb-4">What about other Chromium browsers?</h4>
+          <img class="arrow w-4 h-4" src="/images/icon-arrow.svg" alt="icon-expand">
         </div>
 
-        <div class="answer">
+        <div class="answer  h-0 hidden">
           <p class="text-GrayishBlue text-base">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
           vitae neque eget nisl gravida pellentesque non ut velit..</p>
         </div>
@@ -310,7 +309,7 @@
 
       <div class="cta w-full grid place-items-center mt-16 mb-16">
 
-      <button class="bg-SoftBlue text-white text-base  px-3 py-3 font-medium rounded-lg text-center">More Info</button>
+      <button class="bg-SoftBlue text-white text-base  px-5 py-3 font-medium rounded-lg text-center">More Info</button>
       </div>
 
 
@@ -325,12 +324,12 @@
         <h5 class="text-2xl font-medium">Stay up-to-date with what <br> we’re doing</h5>
       </div>
 
-      <form id="myForm " class="cursor-pointer md:w-3/5 md:flex md:gap-x-4">
+      <form id="myForm" class="cursor-pointer md:w-3/5 md:flex md:gap-x-4 ">
 
-        <div class="email mb-4 bg-SoftRed rounded-lg relative md:w-[70%] ">
-          <input class="py-3 px-6 w-full outline-none rounded-md relative" type="email" placeholder="Enter your email address">
-          <img id="errorIcon"  class=" hiddden absolute top-[20%] right-2 " src="/images/icon-error.svg" alt="icon-error">
-          <p id="errorText" class=" hidxden relative text-xs text-white  w-full text-left p-1 ">Whoops, make sure it's an email</p>
+        <div class="email mb-4 bg-SoftRed rounded-lg relative   md:w-[70%] ">
+          <input id="email" class="py-3 px-6 w-full outline-none rounded-md " type="email" placeholder="Enter your email address">
+          <img id="errorIcon"  class=" hidden absolute top-[20%] right-2  " src="/images/icon-error.svg" alt="icon-error">
+          <p id="errorText" class=" hidden  text-xs text-white  w-full text-left p-1 ">Whoops, make sure it's an email</p>
         </div>
 
           <div class="sub md:w-[30%]">
@@ -352,16 +351,23 @@
     </div>
 
     <nav class="text-white uppercase">
-      <ul class=" flex gap-x-5">
-        <li class=" mb-5 text-base font-light">Features</li>
-        <li class=" mb-5 text-base font-light">Pricing</li>
-        <li class=" mb-5 text-base font-light">Contact</li>
+      <ul class=" md:flex md:gap-x-5">
+        <li class=" mb-5 text-base font-light lg:hover:text-SoftRed">Features</li>
+        <li class=" mb-5 text-base font-light lg:hover:text-SoftRed">Pricing</li>
+        <li class=" mb-5 text-base font-light lg:hover:text-SoftRed">Contact</li>
       </ul>
     </nav>
 
     <div class="socials flex gap-x-6">
-      <img src="/images/icon-facebook.svg" alt="icon-facebook">
-      <img src="/images/icon-twitter.svg" alt="icon-twitter">
+
+      <div class="fb p-2 rounded-full lg:hover:bg-SoftRed">
+        <img src="/images/icon-facebook.svg" alt="icon-facebook">
+      </div>
+
+      <div class="tw p-[0.7rem] rounded-full lg:hover:bg-SoftRed">
+        <img src="/images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+
     </div>
 
 
