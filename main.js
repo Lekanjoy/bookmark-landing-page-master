@@ -9,12 +9,9 @@ hamburgerMenu.addEventListener("click", () => {
   if (navLinks.classList.contains("show")) {
     hamburgerMenu.src = "/images/icon-close.svg";
     logo.src = "/images/logo2.svg";
-    // header.style.position = 'fixed'
   } else {
     hamburgerMenu.src = "/images/icon-hamburger.svg";
     logo.src = "/images/logo-bookmark.svg";
-
-    // header.style.position = "relative";
   }
 });
 
@@ -67,36 +64,45 @@ const easy = document.getElementById("easy");
 // };
 
 speedy.addEventListener("click", () => {
-  console.log("Clicked");
   tab1.style.display = "none";
   tab3.style.display = "none";
   tab2.style.display = "flex";
-  speedy.style.borderBottom = "3px solid red";
+  speedy.style.borderBottom = "3px solid hsl(0, 94%, 66%)";
+  speedy.style.color = " hsl(229, 31%, 21%)";
 
   simple.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
   easy.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
+
+  simple.style.color = " hsl(229, 31%, 21% / 0.5)";
+  easy.style.color = " hsl(229, 31%, 21% / 0.5)";
 });
 
 simple.addEventListener("click", () => {
-  console.log("Clicked");
   tab3.style.display = "none";
   tab2.style.display = "none";
   tab1.style.display = "flex";
-  simple.style.borderBottom = "3px solid red";
+  simple.style.borderBottom = "3px solid hsl(0, 94%, 66%)";
+  simple.style.color = " hsl(229, 31%, 21%)";
 
   speedy.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
   easy.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
+
+  speedy.style.color = " hsl(229, 31%, 21% / 0.5)";
+  easy.style.color = " hsl(229, 31%, 21% / 0.5)";
 });
 
 easy.addEventListener("click", () => {
-  console.log("Clicked");
   tab1.style.display = "none";
   tab2.style.display = "none";
   tab3.style.display = "flex";
-  easy.style.borderBottom = "3px solid red";
+  easy.style.borderBottom = "3px solid hsl(0, 94%, 66%)";
+  easy.style.color = " hsl(229, 31%, 21%)";
 
   simple.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
   speedy.style.borderBottom = "1px solid hsl(229, 8%, 60% )";
+
+  simple.style.color = " hsl(229, 31%, 21% / 0.5)";
+  speedy.style.color = " hsl(229, 31%, 21% / 0.5)";
 });
 
 // Form Validation
@@ -111,11 +117,22 @@ function validateForm(e) {
   let errorIcon = document.getElementById("errorIcon");
   let errorText = document.getElementById("errorText");
 
-  let emailValue = emailField.value;
-  const format = `${emailValue} @.com`
+  const emailValue = emailField.value;
+  const regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  if(!emailValue.match(format)){
-    errorIcon.style.display = 'block';
+  if (emailValue.match(regExp)) {
+    emailField.style.border = "3px solid #27ae60";
+  } else {
+    errorIcon.style.display = "block";
     errorText.style.display = "block";
+    emailField.style.border = "2px solid hsl(0, 94%, 66%)";
+
+    //  Removing Error message after 5seconds
+    setTimeout(() => {
+      emailField.style.border = "none";
+      errorIcon.style.display = "none";
+      errorText.style.display = "none";
+      //   location.reload();
+    }, 5000);
   }
 }
