@@ -10,13 +10,13 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
-<body class="font-Rubik text-lg " style="font-family: 'Nunito',serif;">
+<body class="font-Rubik text-lg ">
 
 
 
   <!-- Logo and Navigation Here -->
-  <header class=" w-full text-white flex justify-between fixed z-20  bg-GrayishBlue cursor-pointer mb-6 pb-2
-   md:h-auto md:bg-transparent md:relative md:mb-0">
+  <header class=" w-full text-white flex justify-between fixed z-20  bg-white drop-shadow-lg cursor-pointer mb-6 pb-3
+   md:h-auto md:pb-0 md:mb-0">
 
     <div class="logo pl-6 pt-4 z-40 filter  md:pt-8 md:filter-none md:z-auto md:pl-20">
       <img id="logo" src="/images/logo-bookmark.svg" alt="logo-bookmark">
@@ -25,7 +25,7 @@
     <nav id="nav" class="hidden absolute top-16  place-items-center w-full px-6 md:bg-transparent md:h-auto 
      md:relative md:top-0 md:w-auto md:place-items-start md:pt-[1.4rem] md:block md:text-VeryDarkBlue md:pr-20">
 
-      <ul class=" w-full text-center text-lg pt-12 md:flex md:gap-x-5 md:pt-0">
+      <ul class=" w-full text-center text-lg pt-12 md:flex md:gap-x-5 md:pt-0 md:pr-10">
         <li
           class="mb-8  border-t-GrayishBlue/50 font-medium border border-x-0 border-b-0 pt-3 w-full md:border-none md:text-base md:pb-0 md:px-0  lg:hover:text-SoftRed">
           FEATURES</li>
@@ -56,15 +56,15 @@
   <main class=" pt-20 md:pt-12">
 
     <!-- Hero Section Here -->
-    <section class="hero  w-full flex flex-col justify-center items-center mb-20 md:flex-row-reverse px-6 md:px-20 md:gap-x-3">
+    <section class="hero  w-full flex flex-1 flex-col justify-center items-center mt-10 mb-20 md:mt-24 md:flex-row-reverse md:gap-x-3">
 
-      <div class="illustration w-4/5 mb-12 md:w-auto md:mb-0">
-        <img class="w-full" src="/images/illustration-hero.svg" alt="illustration-hero">
+      <div class="illustration relative w-full  mb-12  md:mb-0 md:pr-20">
+        <img class="" src="/images/illustration-hero.svg" alt="illustration-hero">
       </div>
 
 
-      <div class="details text-center mb-8 md:text-left ">
-        <h1 class="font-bold text-3xl text-VeryDarkBlue mb-3">A Simple Bookmark <br> Manager</h1>
+      <div class="details text-center px-6 mb-8 md:text-left  md:px-20">
+        <h1 class="font-bold text-3xl text-VeryDarkBlue mb-3 md:text-4xl md:font-extrabold">A Simple Bookmark <br> Manager</h1>
         <p class="text-GrayishBlue mb-6">A clean and simple interface to organize your favourite websites.
           Open a new browser tab and see your sites load instantly. Try it for free.</p>
 
@@ -80,16 +80,16 @@
 
     <!-- Features Section Here -->
 
-    <section class="text-center w-full mb-32 md:flex md:flex-col md:items-center px-6 md:px-20">
+    <section class="text-center w-full mb-32 md:flex md:flex-col md:items-center">
 
-      <div class="features md:max-w-lg">
-        <h2 class="font-semibold text-2xl text-VeryDarkBlue pb-4">Features</h2>
+      <div class="features md:max-w-2xl  px-6 md:px-20">
+        <h2 class="font-semibold text-2xl text-VeryDarkBlue pb-4 md:font-extrabold">Features</h2>
         <p class="text-GrayishBlue mb-8 ">Our aim is to make it quick and easy for you to access your favourite
           websites.
           Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
 
-      <div class="tabs cursor-pointer flex flex-col font-bold md:gap-x-12 md:border md:border-b-GrayishBlue/50 md:border-x-0 md:border-t-0 md:flex-row md:justify-between ">
+      <div class="tabs cursor-pointer flex flex-col flex-1 font-bold  px-6  md:max-w-2xl md:flex-row md:gap-x-12 md:px-20 md:border md:border-b-GrayishBlue/30 md:border-x-0 md:border-t-0  ">
         <h2 id="simple" class="mb-4 border relative border-y-GrayishBlue border-x-0 py-6  text-VeryDarkBlue/50
          md:border-t-0 md:text-base md:mb-0  md:border-y-0  lg:hover:text-SoftRed">Simple
           Bookmarking</h2>
@@ -103,51 +103,51 @@
       <div id="revealTabs" class="revealTabs mt-16">
 
                   <!-- Tab 1 Here -->
-        <div id="tab1" class="tab1 flex flex-col  md:flex-row gap-x-10 md:items-center">
+        <div id="tab1" class="tab1 w-full flex flex-col justify-center items-center md:flex-row gap-x-10 md:items-center">
 
-          <div class="illust mb-12 md:mb-0 md:w-1/2">
-            <img class="md:w-4/5" src="/images/illustration-features-tab-1.svg" alt="illustration">
+          <div class="illust w-full flex justify-center items-center mb-20 px-6  relative md:mb-0 md:w-1/2">
+            <img class="max-w-full block md:w-4/5" src="/images/illustration-features-tab-1.svg" alt="illustration">
           </div>
 
-          <div class="text mb-8 md:text-left md:mb-0 md:w-1/2">
+          <div class="text mb-8 md:text-left md:pr-20 md:mb-0 md:w-1/2">
             <h2 class="text-2xl font-bold  text-VeryDarkBlue mb-4 lg:text-3xl">Bookmark in one click</h2>
             <p class="text-GrayishBlue font-medium md:text-base lg:text-lg">Organize your bookmarks however you like.
               Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
-            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block  md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
+            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4  md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
           </div>
 
         </div>
 
           <!-- Tab 2 Here -->
-        <div id="tab2" class="tab2 hidden flex flex-col md:flex-row   gap-x-10 md:items-center">
+        <div id="tab2" class="tab2 w-full hidden flex flex-col  justify-center items-center md:flex-row gap-x-10 md:items-center">
   
-          <div class="illust mb-12  md:mb-0 md:w-1/2">
-            <img class="md:w-4/5" src="/images/illustration-features-tab-2.svg" alt="illustration">
+          <div class="illust-2 w-full flex justify-center items-center px-6 mb-20 px6 relative  md:mb-0 md:w-1/2">
+            <img class="max-w-full block md:w-4/5" src="/images/illustration-features-tab-2.svg" alt="illustration">
           </div>
 
-          <div class="text mb-8 md:text-left  md:mb-0 md:w-1/2">
+          <div class="text mb-8 md:text-left md:pr-20  md:mb-0 md:w-1/2">
             <h2 class="text-2xl font-bold  text-VeryDarkBlue mb-4 lg:text-3xl">Intelligent search</h2>
             <p class="text-GrayishBlue font-medium  md:text-base lg:text-lg">Our powerful search feature will help
               you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.</p>
-            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
+            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4 md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
           </div>
         </div>
 
           <!-- Tab 3 Here -->
-        <div id="tab3" class="tab3 hidden flex flex-col md:flex-row gap-x-10 md:items-center">
+        <div id="tab3" class="tab3 w-full hidden flex flex-col  justify-center items-center md:flex-row gap-x-10 md:items-center">
 
-          <div class="illust mb-12  md:mb-0 md:w-1/2">
-            <img class="md:w-4/5" src="/images/illustration-features-tab-3.svg" alt="illustration">
+          <div class="illust-3 w-full flex justify-center items-center mb-20 px6 relative  md:mb-0 md:w-1/2">
+            <img class="max-w-full block md:w-4/5" src="/images/illustration-features-tab-3.svg" alt="illustration">
           </div>
 
-          <div class="text mb-8 md:text-left  md:mb-0 md:w-1/2">
+          <div class="text mb-8 md:text-left md:pr-20  md:mb-0 md:w-1/2">
             <h2 class="text-2xl font-bold  text-VeryDarkBlue mb-4 lg:text-3xl">Share your bookmarks</h2>
             <p class="text-GrayishBlue font-medium  md:text-base lg:text-lg">Easily share your bookmarks and
               collections with others. Create a shareable
               link that you can send at the click of a button.</p>
-            <button class="hidden text-white bg-SoftBlue p-2 rounded-md mt-4 md:block md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
+            <button class=" text-white bg-SoftBlue p-2 rounded-md mt-4 md:text-base lg:text-lg  lg:hover:text-SoftBlue lg:hover:border-2 lg:hover:border-SoftBlue lg:hover:bg-transparent">More Info</button>
 
           </div>
         </div>
@@ -168,10 +168,10 @@
           if you’ve got a favourite you’d like us to prioritize.</p>
       </div>
 
-      <div class="cards w-full flex flex-col flex-1 md:flex-row md:gap-x-5">
+      <div class="cards w-full flex flex-col justify-center items-center flex-1 lg:flex-row lg:gap-x-5  ">
 
         <!-- Card 1  -->
-        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl">
+        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl md:shadow-2xl  md:w-96 md:h-96 md:pt-8 ">
 
           <div class="icon w-full mb-8 flex justify-center">
             <img src="/images/logo-chrome.svg" alt="logo-chrome">
@@ -191,7 +191,7 @@
         </div>
 
         <!-- Card 2  -->
-        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl mdd:mt-8">
+        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl md:shadow-2xl md:w-96 md:h-96 md:pt-8 ">
 
           <div class="icon w-full mb-8 flex justify-center">
             <img src="/images/logo-firefox.svg" alt="logo-firefox">
@@ -211,7 +211,7 @@
         </div>
 
         <!-- Card 3  -->
-        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl mdd:mt-16">
+        <div class="card1 w-full bg-white shadow-2xl px-6 pt-16 py-10 mb-16 rounded-2xl md:shadow-2xl md:w-96 md:h-96 md:pt-8 ">
 
           <div class="icon w-full mb-8 flex justify-center">
             <img src="/images/logo-opera.svg" alt="logo-opera">
@@ -331,7 +331,7 @@
       <form id="myForm" class="cursor-pointer md:w-3/5 md:flex md:gap-x-4 ">
 
         <div class="email mb-4 bg-SoftRed rounded-lg relative   md:w-[70%] ">
-          <input id="email" class="py-3 px-6 w-full outline-none rounded-md " type="text" placeholder="Enter your email address">
+          <input id="email" class="py-3 px-6 w-full outline-none rounded-md" type="text" placeholder="Enter your email address">
           <img id="errorIcon"  class=" hidden absolute top-[20%] right-2  " src="/images/icon-error.svg" alt="icon-error">
           <p id="errorText" class=" hidden  text-xs text-white  w-full text-left p-1 ">Whoops, make sure it's an email</p>
         </div>
