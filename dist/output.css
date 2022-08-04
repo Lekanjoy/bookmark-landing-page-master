@@ -688,6 +688,10 @@ video {
   width: 1rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -1419,6 +1423,38 @@ video {
 @media (min-width: 1024px){
   .lg\:z-10{
     z-index: 10;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-36{
+    margin-top: 9rem;
+  }
+
+  .lg\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .lg\:w-96{
+    width: 24rem;
   }
 
   .lg\:flex-row{
